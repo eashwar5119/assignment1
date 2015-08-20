@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pet type:</strong>
+  <%= @pet_record.pet_type %>
+</p>
+
+<p>
+  <strong>Breed:</strong>
+  <%= @pet_record.breed %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @pet_record.age %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @pet_record.weight %>
+</p>
+
+<p>
+  <strong>Date last visit:</strong>
+  <%= @pet_record.date_last_visit %>
+</p>
+
+<%= link_to 'Edit', edit_pet_record_path(@pet_record) %> |
+<%= link_to 'Back', pet_records_path %>
